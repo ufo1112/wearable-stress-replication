@@ -2,13 +2,13 @@
 
 Analysis code for *Does Physiology Improve Prediction of Self-Reported Stress Beyond Task Context?*
 
-The StressID scripts extract the 20-second physiology windows, generate held-out predictions, evaluate predictions at the participant–task level and reproduce the comparisons for manuscript Tables 2–5. The WESAD script checks the timing and scoring of the questionnaire measurements in the supplementary analysis. See [figure instructions](figures/README.md) for Figures 1 and 2.
+The StressID scripts extract the 20-second physiology windows, generate held-out predictions, evaluate predictions at the participant–task level and reproduce the comparisons for manuscript Tables 2–5. The WESAD script checks the timing and scoring of the questionnaire measurements. The EmpathicSchool scripts reproduce the cohort construction, direct and hybrid targets, and scale sensitivity comparisons reported in Supplementary Tables S3 and S4. See [figure instructions](figures/README.md) for Figures 1 and 2.
 
 ## Data access
 
 - [StressID](https://project.inria.fr/stressid/) is available from its providers under their data-use conditions. Use the dataset folder that contains `Physiological/`, `self_assessments.csv`, `labels.csv` and `labels_supplementary.csv`. The distribution used for the manuscript had 710 physiological recordings, so confirm coverage if a different release is used.
 - [WESAD](https://ubi29.informatik.uni-siegen.de/usi/data_wesad.html) is available from the original provider. See the [WESAD instructions](wesad/README.md) for the questionnaire alignment calculation.
-- [EmpathicSchool](https://doi.org/10.5281/zenodo.15556502) is available under the provider's conditions. This package covers StressID and the WESAD questionnaire analysis. The EmpathicSchool sensitivity analysis uses a separate pipeline.
+- [EmpathicSchool](https://doi.org/10.5281/zenodo.15556502) is available from the provider by application and agreement to their terms. See the [EmpathicSchool instructions](empathicschool/README.md) to prepare the local inputs and reproduce the supplementary analysis.
 
 Keep downloaded data and generated participant-level outputs in a local working directory. The scripts read the official data obtained by the researcher and write derived files locally.
 

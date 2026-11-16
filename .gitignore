@@ -6,8 +6,13 @@ data/
 runs/
 stressid_run/
 *.csv
+*.tsv
+*.xlsx
+*.xls
+*.npy
 *.npz
 *.parquet
 *.pkl
+*.h5
 *.zip
 *.log
